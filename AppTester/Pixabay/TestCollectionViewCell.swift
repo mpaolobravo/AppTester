@@ -11,4 +11,9 @@ import UIKit
 class TestCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var labelTest: UILabel!
+    
+    
+    @IBOutlet weak var imgView: UIImageView!
+    
+    
 }

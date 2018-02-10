@@ -7,8 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B44C664202F33D400538552 /* FutbolObj.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B44C663202F33D400538552 /* FutbolObj.swift */; };
+		1B44C666202F3B6B00538552 /* FutbolTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B44C665202F3B6B00538552 /* FutbolTVC.swift */; };
+		1B44C668202F3DE700538552 /* FutbolCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B44C667202F3DE700538552 /* FutbolCell.swift */; };
+		1B44C66B202F4E8700538552 /* PlayersTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B44C66A202F4E8700538552 /* PlayersTVC.swift */; };
+		1B44C66D202F511200538552 /* PlayersObj.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B44C66C202F511200538552 /* PlayersObj.swift */; };
+		1B44C66F202F601000538552 /* PlayerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B44C66E202F601000538552 /* PlayerCell.swift */; };
 		1B451294200DFF07004BC32E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B451293200DFF07004BC32E /* AppDelegate.swift */; };
-		1B451296200DFF07004BC32E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B451295200DFF07004BC32E /* ViewController.swift */; };
 		1B451299200DFF07004BC32E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B451297200DFF07004BC32E /* Main.storyboard */; };
 		1B45129C200DFF07004BC32E /* AppTester.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1B45129A200DFF07004BC32E /* AppTester.xcdatamodeld */; };
 		1B45129E200DFF07004BC32E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B45129D200DFF07004BC32E /* Assets.xcassets */; };
@@ -18,6 +23,8 @@
 		1B4512C5200DFFF0004BC32E /* TestCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4512C4200DFFF0004BC32E /* TestCollectionViewCell.swift */; };
 		1B4512C7200E04A2004BC32E /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4512C6200E04A2004BC32E /* CollectionViewController.swift */; };
 		1B4512C9200E0868004BC32E /* HomeTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4512C8200E0868004BC32E /* HomeTVC.swift */; };
+		1B462DF32021ADD400A72B40 /* ZoomVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B462DF22021ADD400A72B40 /* ZoomVC.swift */; };
+		1B483B782023B80700235A8F /* PixabayObj.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B483B772023B80700235A8F /* PixabayObj.swift */; };
 		9C4E56F6F92B883533A904CB /* Pods_AppTester.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 101FE916E3484A067BD4039E /* Pods_AppTester.framework */; };
 		B60D2C058D15936F8D405EA1 /* Pods_AppTesterUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7A650A24893D101A7F9F43B /* Pods_AppTesterUITests.framework */; };
 		C332BC36BBB6CB1FF7118830 /* Pods_AppTesterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9E930363DE1DA47A9DAD98E /* Pods_AppTesterTests.framework */; };
@@ -43,9 +50,14 @@
 /* Begin PBXFileReference section */
 		021B61B995F50CD28D4E293A /* Pods-AppTester.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppTester.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AppTester/Pods-AppTester.debug.xcconfig"; sourceTree = "<group>"; };
 		101FE916E3484A067BD4039E /* Pods_AppTester.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppTester.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B44C663202F33D400538552 /* FutbolObj.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FutbolObj.swift; sourceTree = "<group>"; };
+		1B44C665202F3B6B00538552 /* FutbolTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FutbolTVC.swift; sourceTree = "<group>"; };
+		1B44C667202F3DE700538552 /* FutbolCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FutbolCell.swift; sourceTree = "<group>"; };
+		1B44C66A202F4E8700538552 /* PlayersTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersTVC.swift; sourceTree = "<group>"; };
+		1B44C66C202F511200538552 /* PlayersObj.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersObj.swift; sourceTree = "<group>"; };
+		1B44C66E202F601000538552 /* PlayerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerCell.swift; sourceTree = "<group>"; };
 		1B451290200DFF07004BC32E /* AppTester.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppTester.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B451293200DFF07004BC32E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1B451295200DFF07004BC32E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1B451298200DFF07004BC32E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1B45129B200DFF07004BC32E /* AppTester.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AppTester.xcdatamodel; sourceTree = "<group>"; };
 		1B45129D200DFF07004BC32E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -60,6 +72,8 @@
 		1B4512C4200DFFF0004BC32E /* TestCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCollectionViewCell.swift; sourceTree = "<group>"; };
 		1B4512C6200E04A2004BC32E /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		1B4512C8200E0868004BC32E /* HomeTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTVC.swift; sourceTree = "<group>"; };
+		1B462DF22021ADD400A72B40 /* ZoomVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomVC.swift; sourceTree = "<group>"; };
+		1B483B772023B80700235A8F /* PixabayObj.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixabayObj.swift; sourceTree = "<group>"; };
 		2EE7DE8289BE39B61C5DAE4B /* Pods-AppTesterUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppTesterUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AppTesterUITests/Pods-AppTesterUITests.release.xcconfig"; sourceTree = "<group>"; };
 		488AD4B7706DDCDDD0AE3B54 /* Pods-AppTesterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppTesterTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AppTesterTests/Pods-AppTesterTests.debug.xcconfig"; sourceTree = "<group>"; };
 		64669D0F33940981EDD68110 /* Pods-AppTesterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppTesterTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AppTesterTests/Pods-AppTesterTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -97,6 +111,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B44C669202F4E1C00538552 /* PlayersTable */ = {
+			isa = PBXGroup;
+			children = (
+				1B44C66E202F601000538552 /* PlayerCell.swift */,
+				1B44C66A202F4E8700538552 /* PlayersTVC.swift */,
+				1B44C66C202F511200538552 /* PlayersObj.swift */,
+			);
+			path = PlayersTable;
+			sourceTree = "<group>";
+		};
 		1B451287200DFF07004BC32E = {
 			isa = PBXGroup;
 			children = (
@@ -122,16 +146,16 @@
 		1B451292200DFF07004BC32E /* AppTester */ = {
 			isa = PBXGroup;
 			children = (
-				1B451293200DFF07004BC32E /* AppDelegate.swift */,
 				1B4512C8200E0868004BC32E /* HomeTVC.swift */,
-				1B451295200DFF07004BC32E /* ViewController.swift */,
+				1B451293200DFF07004BC32E /* AppDelegate.swift */,
+				1B462DF22021ADD400A72B40 /* ZoomVC.swift */,
+				1B47E1722022AFAA004FD71D /* Pixabay */,
+				1B47E1732022B188004FD71D /* Soccer */,
 				1B451297200DFF07004BC32E /* Main.storyboard */,
 				1B45129D200DFF07004BC32E /* Assets.xcassets */,
 				1B45129F200DFF07004BC32E /* LaunchScreen.storyboard */,
 				1B4512A2200DFF07004BC32E /* Info.plist */,
 				1B45129A200DFF07004BC32E /* AppTester.xcdatamodeld */,
-				1B4512C4200DFFF0004BC32E /* TestCollectionViewCell.swift */,
-				1B4512C6200E04A2004BC32E /* CollectionViewController.swift */,
 			);
 			path = AppTester;
 			sourceTree = "<group>";
@@ -152,6 +176,27 @@
 				1B4512B8200DFF07004BC32E /* Info.plist */,
 			);
 			path = AppTesterUITests;
+			sourceTree = "<group>";
+		};
+		1B47E1722022AFAA004FD71D /* Pixabay */ = {
+			isa = PBXGroup;
+			children = (
+				1B4512C4200DFFF0004BC32E /* TestCollectionViewCell.swift */,
+				1B4512C6200E04A2004BC32E /* CollectionViewController.swift */,
+				1B483B772023B80700235A8F /* PixabayObj.swift */,
+			);
+			path = Pixabay;
+			sourceTree = "<group>";
+		};
+		1B47E1732022B188004FD71D /* Soccer */ = {
+			isa = PBXGroup;
+			children = (
+				1B44C667202F3DE700538552 /* FutbolCell.swift */,
+				1B44C665202F3B6B00538552 /* FutbolTVC.swift */,
+				1B44C663202F33D400538552 /* FutbolObj.swift */,
+				1B44C669202F4E1C00538552 /* PlayersTable */,
+			);
+			path = Soccer;
 			sourceTree = "<group>";
 		};
 		2E760404FBDA6DA3460994DD /* Frameworks */ = {
@@ -471,11 +516,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B4512C9200E0868004BC32E /* HomeTVC.swift in Sources */,
+				1B44C664202F33D400538552 /* FutbolObj.swift in Sources */,
+				1B44C666202F3B6B00538552 /* FutbolTVC.swift in Sources */,
+				1B44C66B202F4E8700538552 /* PlayersTVC.swift in Sources */,
 				1B45129C200DFF07004BC32E /* AppTester.xcdatamodeld in Sources */,
-				1B451296200DFF07004BC32E /* ViewController.swift in Sources */,
+				1B462DF32021ADD400A72B40 /* ZoomVC.swift in Sources */,
+				1B44C66D202F511200538552 /* PlayersObj.swift in Sources */,
+				1B483B782023B80700235A8F /* PixabayObj.swift in Sources */,
 				1B4512C5200DFFF0004BC32E /* TestCollectionViewCell.swift in Sources */,
+				1B44C668202F3DE700538552 /* FutbolCell.swift in Sources */,
 				1B451294200DFF07004BC32E /* AppDelegate.swift in Sources */,
 				1B4512C7200E04A2004BC32E /* CollectionViewController.swift in Sources */,
+				1B44C66F202F601000538552 /* PlayerCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
