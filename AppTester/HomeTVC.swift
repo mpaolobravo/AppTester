@@ -7,8 +7,11 @@
 //
 
 import UIKit
+import CoreData
 
 class HomeTVC: UITableViewController {
+    
+    var container: NSPersistentContainer!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,6 +21,28 @@ class HomeTVC: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        
+        container = NSPersistentContainer(name: "AppTester")
+        
+        container.loadPersistentStores { storeDescription, error in
+            if let error = error {
+                print("Unresolved error \(error)")
+            }
+        }
+        
+     //   let team = Team()
+//        team.name = "Woo"
+//        team.shortName = "http://www.example.com"
+    }
+    
+    func saveContext() {
+        if container.viewContext.hasChanges {
+            do {
+                try container.viewContext.save()
+            } catch {
+                print("An error occurred while saving: \(error)")
+            }
+        }
     }
 
     override func didReceiveMemoryWarning() {

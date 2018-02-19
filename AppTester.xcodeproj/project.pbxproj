@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B2FD12D2030B5F400E4FF49 /* Team+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2FD12B2030B5F400E4FF49 /* Team+CoreDataClass.swift */; };
+		1B2FD12E2030B5F400E4FF49 /* Team+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2FD12C2030B5F400E4FF49 /* Team+CoreDataProperties.swift */; };
 		1B44C664202F33D400538552 /* FutbolObj.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B44C663202F33D400538552 /* FutbolObj.swift */; };
 		1B44C666202F3B6B00538552 /* FutbolTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B44C665202F3B6B00538552 /* FutbolTVC.swift */; };
-		1B44C668202F3DE700538552 /* FutbolCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B44C667202F3DE700538552 /* FutbolCell.swift */; };
 		1B44C66B202F4E8700538552 /* PlayersTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B44C66A202F4E8700538552 /* PlayersTVC.swift */; };
 		1B44C66D202F511200538552 /* PlayersObj.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B44C66C202F511200538552 /* PlayersObj.swift */; };
 		1B44C66F202F601000538552 /* PlayerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B44C66E202F601000538552 /* PlayerCell.swift */; };
@@ -50,9 +51,10 @@
 /* Begin PBXFileReference section */
 		021B61B995F50CD28D4E293A /* Pods-AppTester.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppTester.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AppTester/Pods-AppTester.debug.xcconfig"; sourceTree = "<group>"; };
 		101FE916E3484A067BD4039E /* Pods_AppTester.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppTester.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B2FD12B2030B5F400E4FF49 /* Team+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Team+CoreDataClass.swift"; sourceTree = "<group>"; };
+		1B2FD12C2030B5F400E4FF49 /* Team+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Team+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		1B44C663202F33D400538552 /* FutbolObj.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FutbolObj.swift; sourceTree = "<group>"; };
 		1B44C665202F3B6B00538552 /* FutbolTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FutbolTVC.swift; sourceTree = "<group>"; };
-		1B44C667202F3DE700538552 /* FutbolCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FutbolCell.swift; sourceTree = "<group>"; };
 		1B44C66A202F4E8700538552 /* PlayersTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersTVC.swift; sourceTree = "<group>"; };
 		1B44C66C202F511200538552 /* PlayersObj.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersObj.swift; sourceTree = "<group>"; };
 		1B44C66E202F601000538552 /* PlayerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerCell.swift; sourceTree = "<group>"; };
@@ -146,9 +148,10 @@
 		1B451292200DFF07004BC32E /* AppTester */ = {
 			isa = PBXGroup;
 			children = (
+				1B2FD12B2030B5F400E4FF49 /* Team+CoreDataClass.swift */,
+				1B2FD12C2030B5F400E4FF49 /* Team+CoreDataProperties.swift */,
 				1B4512C8200E0868004BC32E /* HomeTVC.swift */,
 				1B451293200DFF07004BC32E /* AppDelegate.swift */,
-				1B462DF22021ADD400A72B40 /* ZoomVC.swift */,
 				1B47E1722022AFAA004FD71D /* Pixabay */,
 				1B47E1732022B188004FD71D /* Soccer */,
 				1B451297200DFF07004BC32E /* Main.storyboard */,
@@ -184,6 +187,7 @@
 				1B4512C4200DFFF0004BC32E /* TestCollectionViewCell.swift */,
 				1B4512C6200E04A2004BC32E /* CollectionViewController.swift */,
 				1B483B772023B80700235A8F /* PixabayObj.swift */,
+				1B462DF22021ADD400A72B40 /* ZoomVC.swift */,
 			);
 			path = Pixabay;
 			sourceTree = "<group>";
@@ -191,7 +195,6 @@
 		1B47E1732022B188004FD71D /* Soccer */ = {
 			isa = PBXGroup;
 			children = (
-				1B44C667202F3DE700538552 /* FutbolCell.swift */,
 				1B44C665202F3B6B00538552 /* FutbolTVC.swift */,
 				1B44C663202F33D400538552 /* FutbolObj.swift */,
 				1B44C669202F4E1C00538552 /* PlayersTable */,
@@ -482,10 +485,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-AppTester/Pods-AppTester-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -521,10 +526,11 @@
 				1B44C66B202F4E8700538552 /* PlayersTVC.swift in Sources */,
 				1B45129C200DFF07004BC32E /* AppTester.xcdatamodeld in Sources */,
 				1B462DF32021ADD400A72B40 /* ZoomVC.swift in Sources */,
+				1B2FD12D2030B5F400E4FF49 /* Team+CoreDataClass.swift in Sources */,
 				1B44C66D202F511200538552 /* PlayersObj.swift in Sources */,
 				1B483B782023B80700235A8F /* PixabayObj.swift in Sources */,
 				1B4512C5200DFFF0004BC32E /* TestCollectionViewCell.swift in Sources */,
-				1B44C668202F3DE700538552 /* FutbolCell.swift in Sources */,
+				1B2FD12E2030B5F400E4FF49 /* Team+CoreDataProperties.swift in Sources */,
 				1B451294200DFF07004BC32E /* AppDelegate.swift in Sources */,
 				1B4512C7200E04A2004BC32E /* CollectionViewController.swift in Sources */,
 				1B44C66F202F601000538552 /* PlayerCell.swift in Sources */,

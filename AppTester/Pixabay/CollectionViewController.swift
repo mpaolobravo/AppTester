@@ -8,6 +8,7 @@
 
 import UIKit
 import SwiftyJSON
+import MBProgressHUD
 
 // private let reuseIdentifier = "Cell"
 
@@ -53,6 +54,8 @@ class CollectionViewController: UICollectionViewController {
     }
     
     func fetchResults(searchString: String){
+        
+       // MBProgressHUD.showAdded(to: self.view!, animated: true)
         
         print("searchString = \(searchString)")
         
@@ -115,6 +118,7 @@ class CollectionViewController: UICollectionViewController {
             
         }
         
+       // MBProgressHUD.hide(for: self.view!, animated: true)
  
         self.collectionView?.reloadData()
      
@@ -289,6 +293,9 @@ extension UIImageView {
                 else { return }
             DispatchQueue.main.async() {
                 self.image = image
+                UIApplication.shared.isNetworkActivityIndicatorVisible = false
+                
+              //  MBProgressHUD.hide(for: self, animated: true)
             }
             }.resume()
     }

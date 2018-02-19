@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MBProgressHUD
 
 class ZoomVC: UIViewController, UIScrollViewDelegate  {
 
@@ -35,31 +36,31 @@ class ZoomVC: UIViewController, UIScrollViewDelegate  {
         
         scrolView.delegate = self
         
+        
+        
+       
         imgView.downloadedFrom(link: urlHolder)
         
-       // print("url = \(urlHolder)")
-        
-       //  imgView.image = imgView.image
-        
-        //        scrolView = UIScrollView(frame: view.bounds)
-        //        scrolView.backgroundColor = UIColor.blackColor()
-        //        scrolView.contentSize = imgView.bounds.size
-        
-        //scrolView.autoresizingMask = UIViewAutoresizing.FlexibleWidth | UIViewAutoresizing.FlexibleHeight
-        // scrolView.contentOffset = CGPoint(x: 1000, y: 450)
-        //
-        //        scrolView.addSubview(imgView)
-        //        view.addSubview(scrolView)
-        
-        //        scrolView.minimumZoomScale = 0.1
-        //        scrolView.maximumZoomScale = 4.0
-        //        scrolView.zoomScale = 1.0
-        
-        //        setZoomScale()
+//        DispatchQueue.main.async {
+//            MBProgressHUD.showAdded(to: self.view!, animated: true)
+//            
+//        }
+//        
+//        if imgView.image != nil {
+//            DispatchQueue.main.async {
+//                MBProgressHUD.hide(for: self.view!, animated: true)
+//               // MBProgressHUD.remove
+//            }
+//        }
+//       
         
         
         setupGestureRecognizer()
     }
+    
+    
+    
+    
     
     func setZoomScale() {
         let imageViewSize = imgView.bounds.size
